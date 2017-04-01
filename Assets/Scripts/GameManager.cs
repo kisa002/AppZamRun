@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour {
 
 	public GameObject slide;
 	public GameObject movePanel;
+	public GameManager gameManager;
 
 	public int stage = 1;
 
@@ -16,7 +17,7 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		gameManager = gameManager.GetComponent<GameManager> ();
 	}
 	
 	// Update is called once per frame
@@ -32,6 +33,14 @@ public class GameManager : MonoBehaviour {
 				slide.SetActive (false);
 				movePanel.SetActive (true);
 				break;
+		}
+	}
+
+	void OnTriggerEnter(Collider col)
+	{
+		if (col.tag == "NextStage")
+		{
+			gameManager.stage += 1;
 		}
 	}
 }

@@ -13,7 +13,7 @@ public class ObstacleManager : MonoBehaviour {
 		gameTime += Time.deltaTime;
 
 		if (gameTime >= 0.0f && busAppear) {
-			busO = Instantiate (busObject, new Vector3 (-12.5f, 2, 0), Quaternion.identity) as GameObject;
+			Instantiate (busObject, new Vector3 (-12.5f, 2, 0), Quaternion.identity);
 			busAppear = false;
 		}
 	}
@@ -21,8 +21,8 @@ public class ObstacleManager : MonoBehaviour {
 	public void destroy() {
 		Vector3 view = Camera.main.WorldToScreenPoint(transform.position);
 
-		if(view.x < -50) {          
-			Destroy(gameObject);
+		if(view.x < 0) {          
+			Destroy(this);
 		}
 	}
 }
