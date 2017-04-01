@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-	public float jump = 300.0f;
-
 	private Rigidbody rgd;
+	public GameManager gameManager;
+
+	public float jump = 300.0f;
+	public float speed = 0.1f;
+
 	private bool isJump = false;
 
 	// Use this for initialization
@@ -15,8 +18,17 @@ public class PlayerController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void FixedUpdate () {
+
+		var pos = transform.position;
+
+		switch (gameManager.stage)
+		{
+			case 2:
+				transform.position = new Vector3 (pos.x + speed, pos.y, pos.z);
+
+				break;
+		}
 	}
 
 	public void Jump()

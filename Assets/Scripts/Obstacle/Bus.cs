@@ -2,26 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(ObstacleManager))]
 public class Bus : MonoBehaviour {
 
-	ObstacleManager obstacleManager;
+	public GameObject[] busObstacles;
 	GameObject bus;
+	ObstacleManager obstacleManager;
 
-	// Use this for initialization
-	void Start () {
+	void Start() {
 		obstacleManager = GetComponent<ObstacleManager> ();
-
-		//for(; transform.position.x <= 13.0f; )
-			//bus.transform.position.x += 5.0f * Time.deltaTime;
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
-		
+		for (; transform.position.x <= 13;)
+			transform.position = new Vector2 (transform.position.x + 5.0f * Time.deltaTime, transform.position.y);
+
+		//StartCoroutine (busObstacleInstantiate ());
 	}
 
-	void busAppear() {
-		bus = Instantiate (obstacleManager.bus, new Vector3 (-17.5f, 2, 0), Quaternion.identity) as GameObject;
-	}
+//	IEnumerator busObstacleInstantiate() {
+//		while (transform.position.x >= 13) {
+//			yield return new WaitForSeconds (1);
+//
+//			GameObject obstacle = Instantiate (
+//				busObstacles [Random.Range (0, busObstacles.Length)],
+//				new Vector3 (4.5f, Random.Range (-1f, 5.0f), 0),
+//				Quaternion.identity) as GameObject;
+//		}
+//	}
 }

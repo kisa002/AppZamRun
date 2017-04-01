@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class ObstacleManager : MonoBehaviour {
 
-	public float obstacleSpeed;
+	public GameObject busObject;
+	public float gameTime = -1.0f;
+	bool busAppear = true;
+	GameObject busO;
 
-	public GameObject bus;
-	public GameObject[] busObstacle;
-	public GameObject[] trashObstacle;
+	void Update() {
+		gameTime += Time.deltaTime;
+
+		if (gameTime >= 0.0f && busAppear) {
+			busO = Instantiate (busObject, new Vector3 (-12.5f, 2, 0), Quaternion.identity) as GameObject;
+			busAppear = false;
+		}
+	}
 
 	public void destroy() {
 		Vector3 view = Camera.main.WorldToScreenPoint(transform.position);
@@ -16,12 +24,5 @@ public class ObstacleManager : MonoBehaviour {
 		if(view.x < -50) {          
 			Destroy(gameObject);
 		}
-	}
-
-	public void instantiate(GameObject obstacle) {
-		obstacle = Instantiate (
-			busObstacle[Random.Range(0, busObstacle.Length)],
-			new Vector3 (4.5f, Random.Range(-1f, 5.0f), 0),
-			Quaternion.identity) as GameObject;
 	}
 }

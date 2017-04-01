@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent (typeof(Bus))]
 public class Dust : MonoBehaviour {
 	
 	public float obstacleSpeed;
