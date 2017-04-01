@@ -35,20 +35,4 @@ public class GameManager : MonoBehaviour {
 				break;
 		}
 	}
-
-	void OnTriggerEnter(Collider col)
-	{
-		if (col.tag == "NextStage")
-		{
-			gameManager.stage += 1;
-		}
-
-		switch (gameManager.stage)
-		{
-			case 2:
-				GameObject.Find ("Apartment").gameObject.SetActive (false);
-				GameObject.Find ("Road").gameObject.SetActive (true);
-				break;
-		}
-	}
 }

@@ -104,7 +104,17 @@ public class PlayerController : MonoBehaviour {
 
 			case "NextStage":
 				gameManager.stage++;
+
+				switch (gameManager.stage)
+				{
+					case 2:
+						GameObject.Find ("Apartment").gameObject.SetActive (false);
+						GameObject.Find ("Road").gameObject.SetActive (true);
+						break;
+				}
+
 				col.gameObject.SetActive (false);
+
 				break;
 		}
 	}
