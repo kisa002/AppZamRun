@@ -8,13 +8,13 @@ public class PlayerController : MonoBehaviour {
 
 	public GameManager gameManager;
 
-	private GameObject apartmentStair1;
-	private GameObject apartmentStair2;
-	private GameObject apartmentStair3;
-	private GameObject apartmentStair4;
-	private GameObject apartmentStair5;
-	private GameObject apartmentStair6;
-	private GameObject apartmentStair7;
+	public GameObject apartmentStair1;
+	public GameObject apartmentStair2;
+	public GameObject apartmentStair3;
+	public GameObject apartmentStair4;
+	public GameObject apartmentStair5;
+	public GameObject apartmentStair6;
+	public GameObject apartmentStair7;
 
 	public float jump = 300.0f;
 	public float speed = 0.3f;
@@ -25,13 +25,13 @@ public class PlayerController : MonoBehaviour {
 	void Start () {
 		rgd = GetComponent<Rigidbody> ();
 
-		apartmentStair1 = GameObject.Find ("ApartmentStair1");
-		apartmentStair2 = GameObject.Find ("ApartmentStair2");
-		apartmentStair3 = GameObject.Find ("ApartmentStair3");
-		apartmentStair4 = GameObject.Find ("ApartmentStair4");
-		apartmentStair5 = GameObject.Find ("ApartmentStair5");
-		apartmentStair6 = GameObject.Find ("ApartmentStair6");
-		apartmentStair7 = GameObject.Find ("ApartmentStair7");
+//		apartmentStair1 = GameObject.Find ("ApartmentStair1");
+//		apartmentStair2 = GameObject.Find ("ApartmentStair2");
+//		apartmentStair3 = GameObject.Find ("ApartmentStair3");
+//		apartmentStair4 = GameObject.Find ("ApartmentStair4");
+//		apartmentStair5 = GameObject.Find ("ApartmentStair5");
+//		apartmentStair6 = GameObject.Find ("ApartmentStair6");
+//		apartmentStair7 = GameObject.Find ("ApartmentStair7");
 	}
 	
 	// Update is called once per frame

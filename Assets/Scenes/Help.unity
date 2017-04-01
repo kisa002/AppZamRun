@@ -959,7 +959,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 335986898}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.9, y: -4.46, z: -6.6708355}
+  m_LocalPosition: {x: 26.25, y: -4.46, z: -6.6708355}
   m_LocalScale: {x: 2.803188, y: 22.725348, z: 1}
   m_Children: []
   m_Father: {fileID: 383382685}
@@ -1998,6 +1998,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 916116402}
+  apartmentStair1: {fileID: 1249402519}
+  apartmentStair2: {fileID: 1010430439}
+  apartmentStair3: {fileID: 1489055876}
+  apartmentStair4: {fileID: 1825114813}
+  apartmentStair5: {fileID: 294492085}
+  apartmentStair6: {fileID: 1162149890}
+  apartmentStair7: {fileID: 1577860069}
   jump: 300
   speed: 0.2
 --- !u!61 &698763333
