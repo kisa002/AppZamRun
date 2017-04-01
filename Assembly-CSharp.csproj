@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\CameraManager.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Intro.cs" />
+     <Compile Include="Assets\Scripts\IntroCamera.cs" />
      <Compile Include="Assets\Scripts\MoveLeft.cs" />
      <Compile Include="Assets\Scripts\MoveRight.cs" />
      <Compile Include="Assets\Scripts\Obstacle\Bus.cs" />
