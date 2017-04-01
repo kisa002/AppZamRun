@@ -90,7 +90,7 @@ public class PlayerController : MonoBehaviour {
 				apartmentStair4.GetComponent<PolygonCollider2D> ().enabled = false;
 				break;
 
-			case "ApartmentStar5":
+			case "ApartmentStair5":
 				apartmentStair5.GetComponent<PolygonCollider2D> ().enabled = false;
 				break;
 
