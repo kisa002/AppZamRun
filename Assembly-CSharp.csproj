@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\SettingController.cs" />
      <Compile Include="Assets\Scripts\SettingManager.cs" />
      <Compile Include="Assets\Scripts\SettingPanel.cs" />
+     <Compile Include="Assets\Scripts\TimeManager.cs" />
      <Compile Include="Assets\Scripts\UiController.cs" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
