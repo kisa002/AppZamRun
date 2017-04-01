@@ -114,8 +114,7 @@ public class PlayerController : MonoBehaviour {
 				switch (gameManager.stage)
 				{
 					case 2:
-						GameObject.Find ("Apartment").gameObject.SetActive (false);
-						GameObject.Find ("Road").gameObject.SetActive (true);
+						Application.LoadLevel ("Gameasdf");
 						break;
 				}
 

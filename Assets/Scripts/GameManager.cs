@@ -19,6 +19,10 @@ public class GameManager : MonoBehaviour {
 	void Start () {
 		gameManager = gameManager.GetComponent<GameManager> ();
 	}
+
+	void Awake() {
+		DontDestroyOnLoad(transform.gameObject);
+	}
 	
 	// Update is called once per frame
 	void Update () {

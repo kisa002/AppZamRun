@@ -1711,7 +1711,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &916116402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1727,6 +1727,7 @@ MonoBehaviour:
   gameOver: 0
   slide: {fileID: 0}
   movePanel: {fileID: 0}
+  gameManager: {fileID: 0}
   stage: 1
   time: 60
 --- !u!4 &916116403
@@ -2594,6 +2595,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
+  apartmentStair1: {fileID: 0}
+  apartmentStair2: {fileID: 0}
+  apartmentStair3: {fileID: 0}
+  apartmentStair4: {fileID: 0}
+  apartmentStair5: {fileID: 0}
+  apartmentStair6: {fileID: 0}
+  apartmentStair7: {fileID: 0}
   jump: 300
   speed: 0.1
 --- !u!65 &1586216174
