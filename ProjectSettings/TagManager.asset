@@ -50,6 +50,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Obstacle
+  - name: Unit
     uniqueID: 1996770487
     locked: 0

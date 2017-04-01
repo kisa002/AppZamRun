@@ -6,12 +6,9 @@ public class Bus : MonoBehaviour {
 
 	public GameObject[] busObstacles;
 	GameObject bus;
-	ObstacleManager obstacleManager;
 	float busSpeed = 5.0f * Time.deltaTime;
 
 	void Start() {
-		obstacleManager = GetComponent<ObstacleManager> ();
-
 		StartCoroutine ("busObstacleInstantiate");
 	}
 

@@ -57,6 +57,8 @@
      <Compile Include="Assets\Scripts\Obstacle\Dust.cs" />
      <Compile Include="Assets\Scripts\Obstacle\ObstacleManager.cs" />
      <Compile Include="Assets\Scripts\Obstacle\Smoke.cs" />
+     <Compile Include="Assets\Scripts\Obstacle\Trash.cs" />
+     <Compile Include="Assets\Scripts\Obstacle\TrashManager.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\SettingController.cs" />
      <Compile Include="Assets\Scripts\SettingManager.cs" />

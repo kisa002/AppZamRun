@@ -24,7 +24,7 @@ public class MoveLeft : EventTrigger {
 
 	void Update()
 	{
-		if (isClick == true)
+		if (isClick == true)	
 			player.MoveLeft ();
 	}
 }

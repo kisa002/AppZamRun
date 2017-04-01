@@ -60,12 +60,18 @@ public class PlayerController : MonoBehaviour {
 	{
 		var pos = transform.position;
 		transform.position = new Vector3 (pos.x - speed, pos.y, pos.z);
+
+		Quaternion v3Rotation = Quaternion.Euler(0f, 180f, 0f);
+		transform.rotation = v3Rotation;
 	}
 
 	public void MoveRight()
 	{
 		var pos = transform.position;
 		transform.position = new Vector3 (pos.x + speed, pos.y, pos.z);
+
+		Quaternion v3Rotation = Quaternion.Euler(0f, 0f, 0f);
+		transform.rotation = v3Rotation;
 	}
 
 	void OnTriggerEnter2D(Collider2D col)
