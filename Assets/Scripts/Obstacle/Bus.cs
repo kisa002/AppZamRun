@@ -11,22 +11,23 @@ public class Bus : MonoBehaviour {
 
 	void Start() {
 		obstacleManager = GetComponent<ObstacleManager> ();
-		for (; transform.position.x <= 13;)
-			transform.position = new Vector2 (transform.position.x + busSpeed, transform.position.y);
+
 		StartCoroutine ("busObstacleInstantiate");
 	}
 
-	void Update () {
-		
-	}
-
 	IEnumerator busObstacleInstantiate() {
-		
-		yield return new WaitForSeconds (4.0f);
+		while (transform.position.x < 13) {
+			yield return new WaitForSeconds (0.01f * Time.deltaTime);
+			transform.position = new Vector2 (transform.position.x + busSpeed, transform.position.y);
+		}
 
-		Instantiate (
-			busObstacles [Random.Range (0, busObstacles.Length)],
-			new Vector3 (4.5f, Random.Range (-1f, 5.0f), 0),
-			Quaternion.identity);	
+		while (transform.position.x >= 13) {
+			yield return new WaitForSeconds (1.5f);
+
+			Instantiate (
+				busObstacles [Random.Range (0, busObstacles.Length)],
+				new Vector3 (4.5f, Random.Range (-2.5f, 0f), 0),
+				Quaternion.identity);
+		}
 	}
 }

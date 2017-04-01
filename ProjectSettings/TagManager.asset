@@ -6,6 +6,13 @@ TagManager:
   tags:
   - Obstacle
   - NextStage
+  - ApartmentStair1
+  - ApartmentStair2
+  - ApartmentStair3
+  - ApartmentStair4
+  - ApartmentStair5
+  - ApartmentStair6
+  - ApartmentStair7
   layers:
   - Default
   - TransparentFX

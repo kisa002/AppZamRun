@@ -54,7 +54,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
@@ -65,7 +65,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1514371807602926}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 25.9, y: 10.8, z: 0.2}
@@ -81,7 +81,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b8f495f46ec04b388d6fc876a7064d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  busObstacle: []
+  busObstacles:
+  - {fileID: 1523587035982262, guid: 4ca4e9ff99f36463398f706add7b88a6, type: 2}
+  - {fileID: 1348572366716026, guid: 521c6775eafd44c8297c70d13aaf1ad9, type: 2}
 --- !u!212 &212540679041399346
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -113,7 +115,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b3738be1da97f4d2a85d572c83422e43, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7077bbc8874644c8596216648d1973d3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

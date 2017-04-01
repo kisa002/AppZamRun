@@ -5,17 +5,20 @@ using UnityEngine;
 public class Smoke : MonoBehaviour {
 
 	public float obstacleSpeed;
-	ObstacleManager obstacleManager;
-
-	void Start() {
-		obstacleManager = GetComponent<ObstacleManager> ();
-	}
 
 	void Update () {
 		obstacleSpeed = 5.0f * Time.deltaTime;
 
-		transform.position = new Vector2 (transform.position.x - obstacleSpeed, 0);
+		transform.position = new Vector2 (transform.position.x - obstacleSpeed, transform.position.y);
 
-		obstacleManager.destroy ();
+		destroy ();
+	}
+
+	void destroy() {
+		Vector3 view = Camera.main.WorldToScreenPoint(transform.position);
+
+		if(view.x < -10) {          
+			Destroy(gameObject);
+		}
 	}
 }

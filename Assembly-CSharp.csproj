@@ -46,9 +46,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Action.cs" />
      <Compile Include="Assets\Scripts\Background.cs" />
      <Compile Include="Assets\Scripts\CameraManager.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\MoveLeft.cs" />
+     <Compile Include="Assets\Scripts\MoveRight.cs" />
      <Compile Include="Assets\Scripts\Obstacle\Bus.cs" />
      <Compile Include="Assets\Scripts\Obstacle\Dust.cs" />
      <Compile Include="Assets\Scripts\Obstacle\ObstacleManager.cs" />

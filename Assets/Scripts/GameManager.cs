@@ -25,13 +25,13 @@ public class GameManager : MonoBehaviour {
 		switch (stage)
 		{
 			case 1:
-				slide.SetActive (true);
-				movePanel.SetActive (false);
+				slide.SetActive (false);
+				movePanel.SetActive (true);
 				break;
 
 			case 2:
-				slide.SetActive (false);
-				movePanel.SetActive (true);
+				slide.SetActive (true);
+				movePanel.SetActive (false);
 				break;
 		}
 	}
@@ -41,6 +41,14 @@ public class GameManager : MonoBehaviour {
 		if (col.tag == "NextStage")
 		{
 			gameManager.stage += 1;
+		}
+
+		switch (gameManager.stage)
+		{
+			case 2:
+				GameObject.Find ("Apartment").gameObject.SetActive (false);
+				GameObject.Find ("Road").gameObject.SetActive (true);
+				break;
 		}
 	}
 }

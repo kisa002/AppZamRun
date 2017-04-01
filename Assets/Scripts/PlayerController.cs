@@ -5,16 +5,33 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
 	private Rigidbody rgd;
+
 	public GameManager gameManager;
 
+	private GameObject apartmentStair1;
+	private GameObject apartmentStair2;
+	private GameObject apartmentStair3;
+	private GameObject apartmentStair4;
+	private GameObject apartmentStair5;
+	private GameObject apartmentStair6;
+	private GameObject apartmentStair7;
+
 	public float jump = 300.0f;
-	public float speed = 0.1f;
+	public float speed = 0.3f;
 
 	private bool isJump = false;
 
 	// Use this for initialization
 	void Start () {
 		rgd = GetComponent<Rigidbody> ();
+
+		apartmentStair1 = GameObject.Find ("ApartmentStair1");
+		apartmentStair2 = GameObject.Find ("ApartmentStair2");
+		apartmentStair3 = GameObject.Find ("ApartmentStair3");
+		apartmentStair4 = GameObject.Find ("ApartmentStair4");
+		apartmentStair5 = GameObject.Find ("ApartmentStair5");
+		apartmentStair6 = GameObject.Find ("ApartmentStair6");
+		apartmentStair7 = GameObject.Find ("ApartmentStair7");
 	}
 	
 	// Update is called once per frame
@@ -25,8 +42,6 @@ public class PlayerController : MonoBehaviour {
 		switch (gameManager.stage)
 		{
 			case 2:
-				transform.position = new Vector3 (pos.x + speed, pos.y, pos.z);
-
 				break;
 		}
 	}
@@ -41,8 +56,58 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
-	void OnCollisionEnter(Collision col)
+	public void MoveLeft()
+	{
+		var pos = transform.position;
+		transform.position = new Vector3 (pos.x - speed, pos.y, pos.z);
+	}
+
+	public void MoveRight()
+	{
+		var pos = transform.position;
+		transform.position = new Vector3 (pos.x + speed, pos.y, pos.z);
+	}
+
+	void OnTriggerEnter2D(Collider2D col)
 	{
 		isJump = false;
+
+		switch (col.gameObject.tag)
+		{
+			case "ApartmentStair1":
+				apartmentStair1.GetComponent<PolygonCollider2D> ().enabled = false;
+				break;
+
+			case "ApartmentStair2":
+				apartmentStair2.GetComponent<PolygonCollider2D> ().enabled = false;
+				break;
+
+			case "ApartmentStair3":
+				apartmentStair3.GetComponent<PolygonCollider2D> ().enabled = false;
+				break;
+
+			case "ApartmentStair4":
+				apartmentStair4.GetComponent<PolygonCollider2D> ().enabled = false;
+				break;
+
+			case "ApartmentStar5":
+				apartmentStair5.GetComponent<PolygonCollider2D> ().enabled = false;
+				break;
+
+			case "ApartmentStair6":
+				apartmentStair6.GetComponent<PolygonCollider2D> ().enabled = false;
+				break;
+
+			case "ApartmentStair7":
+				apartmentStair7.GetComponent<PolygonCollider2D> ().enabled = false;
+				break;
+
+			case "NextStage":
+				gameManager.stage++;
+				col.gameObject.SetActive (false);
+				break;
+		}
 	}
+
+	//-0.315
 }
