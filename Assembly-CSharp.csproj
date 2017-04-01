@@ -49,9 +49,11 @@
      <Compile Include="Assets\Scripts\Action.cs" />
      <Compile Include="Assets\Scripts\Background.cs" />
      <Compile Include="Assets\Scripts\CameraManager.cs" />
+     <Compile Include="Assets\Scripts\Fail.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Intro.cs" />
      <Compile Include="Assets\Scripts\IntroCamera.cs" />
+     <Compile Include="Assets\Scripts\MainText.cs" />
      <Compile Include="Assets\Scripts\MoveLeft.cs" />
      <Compile Include="Assets\Scripts\MoveRight.cs" />
      <Compile Include="Assets\Scripts\Obstacle\Bus.cs" />
@@ -64,6 +66,7 @@
      <Compile Include="Assets\Scripts\SettingController.cs" />
      <Compile Include="Assets\Scripts\SettingManager.cs" />
      <Compile Include="Assets\Scripts\SettingPanel.cs" />
+     <Compile Include="Assets\Scripts\Sucess.cs" />
      <Compile Include="Assets\Scripts\TimeManager.cs" />
      <Compile Include="Assets\Scripts\UiController.cs" />
  <Reference Include="UnityEngine.Analytics">
