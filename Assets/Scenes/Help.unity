@@ -419,7 +419,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 719.4999, y: 86}
+  m_AnchoredPosition: {x: 700, y: 86}
   m_SizeDelta: {x: 231, y: 172}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &164534339
@@ -2008,7 +2008,8 @@ MonoBehaviour:
   apartmentStair6: {fileID: 1162149890}
   apartmentStair7: {fileID: 1577860069}
   jump: 300
-  speed: 0.2
+  speed: 0.09
+  anim: {fileID: 0}
 --- !u!95 &698763334
 Animator:
   serializedVersion: 3

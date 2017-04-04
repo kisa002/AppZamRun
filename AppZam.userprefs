@@ -1,12 +1,30 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
     <Files>
-      <File FileName="Assets/Scripts/TimeManager.cs" Line="22" Column="20" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="40" Column="3" />
+      <File FileName="Assets/Scripts/TimeManager.cs" Line="32" Column="18" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/SettingManager.cs" Line="21" Column="22" />
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="36" Column="25" />
-      <File FileName="Assets/Scripts/CameraManager.cs" Line="17" Column="3" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="57" Column="35" />
+      <File FileName="Assets/Scripts/CameraManager.cs" Line="21" Column="1" />
+      <File FileName="Assets/Scripts/Action.cs" Line="7" Column="2" />
+      <File FileName="Assets/Scripts/Background.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MoveLeft.cs" Line="27" Column="24" />
+      <File FileName="Assets/Scripts/MoveRight.cs" Line="28" Column="20" />
+      <File FileName="Assets/Scripts/Intro.cs" Line="17" Column="4" />
+      <File FileName="Assets/Scripts/UiController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/IntroCamera.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/SettingController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/SettingPanel.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Sucess.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Fail.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MainText.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Obstacle/Bus.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Obstacle/Dust.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Obstacle/ObstacleManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Obstacle/Smoke.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Obstacle/Trash.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Obstacle/TrashManager.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,7 +32,8 @@
           <Node name="AppZam" expanded="True">
             <Node name="Assembly-CSharp" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="GameManager.cs" selected="True" />
+                <Node name="Obstacle" expanded="True" />
+                <Node name="PlayerController.cs" selected="True" />
               </Node>
             </Node>
           </Node>

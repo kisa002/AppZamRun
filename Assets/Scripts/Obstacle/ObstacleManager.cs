@@ -7,15 +7,15 @@ public class ObstacleManager : MonoBehaviour {
 	public GameObject busObject;
 	public GameObject trashManager;
 	public float gameTime = -1.0f;
-	bool busAppear = false;
-	bool trashAppear = true;
+	bool busAppear = true;
+	bool trashAppear = false;
 
 
 	void Update() {
 		gameTime += Time.deltaTime;
 
 		if (gameTime >= 0.0f && busAppear) {
-			Instantiate (busObject, new Vector3 (-12.5f, 0.25f, 0), Quaternion.identity);
+			Instantiate (busObject, new Vector3 (-12.5f, 2.5f, 0), Quaternion.identity);
 			busAppear = false;
 		}
 

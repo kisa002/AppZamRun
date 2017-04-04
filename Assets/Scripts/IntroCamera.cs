@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class IntroCamera : MonoBehaviour {
 
@@ -8,6 +9,12 @@ public class IntroCamera : MonoBehaviour {
 
 	void Start () {
 		StartCoroutine ("Home");	
+	}
+
+	void Update() {
+		if (Input.GetMouseButtonDown(0)) {
+			transform.position = new Vector3 (transform.position.x, transform.position.y - 2.5f, transform.position.z);
+		}
 	}
 	
 	IEnumerator Home()
@@ -24,6 +31,8 @@ public class IntroCamera : MonoBehaviour {
 
 		yield return new WaitForSeconds (2.0f);
 
-
+		SceneManager.LoadScene ("MainScene");
 	}
+
+
 }

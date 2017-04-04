@@ -6,8 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Game.unity
+    path: Assets/Scenes/Intro.unity
   - enabled: 1
     path: Assets/Scenes/Game-HAEYUM.unity
   - enabled: 1
-    path: Assets/Gameasdf.unity
+    path: Assets/Scenes/Gameasdf.unity
+  - enabled: 1
+    path: Assets/Scenes/Help.unity
+  - enabled: 1
+    path: Assets/Scenes/FailEndingScene.unity
+  - enabled: 1
+    path: Assets/Scenes/SucessEndingScene.unity
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+  - enabled: 1
+    path: Assets/Scenes/Game.unity

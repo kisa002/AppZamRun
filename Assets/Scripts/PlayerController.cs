@@ -19,11 +19,15 @@ public class PlayerController : MonoBehaviour {
 	public float jump = 300.0f;
 	public float speed = 0.3f;
 
+
 	private bool isJump = false;
+
+	public Animator anim;
 
 	// Use this for initialization
 	void Start () {
 		rgd = GetComponent<Rigidbody> ();
+		anim = GetComponent<Animator> ();
 
 //		apartmentStair1 = GameObject.Find ("ApartmentStair1");
 //		apartmentStair2 = GameObject.Find ("ApartmentStair2");
@@ -33,22 +37,10 @@ public class PlayerController : MonoBehaviour {
 //		apartmentStair6 = GameObject.Find ("ApartmentStair6");
 //		apartmentStair7 = GameObject.Find ("ApartmentStair7");
 	}
-	
-	// Update is called once per frame
-	void FixedUpdate () {
-
-		var pos = transform.position;
-
-		switch (gameManager.stage)
-		{
-			case 2:
-				break;
-		}
-	}
 
 	public void Jump()
 	{
-		if (isJump == false) {
+		if (isJump == true) {
 			Vector3 force = transform.up * jump;
 			rgd.AddForce (force);
 
@@ -123,6 +115,12 @@ public class PlayerController : MonoBehaviour {
 				break;
 		}
 	}
+
+	void OnCollisionEnter2D(Collision2D col)
+	{
+		isJump = false;
+	}
+
 
 	//-0.315
 }

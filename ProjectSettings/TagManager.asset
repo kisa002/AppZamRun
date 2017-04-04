@@ -13,6 +13,7 @@ TagManager:
   - ApartmentStair5
   - ApartmentStair6
   - ApartmentStair7
+  - Ground
   layers:
   - Default
   - TransparentFX

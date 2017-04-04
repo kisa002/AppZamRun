@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MainText : MonoBehaviour {
 	
@@ -11,6 +12,12 @@ public class MainText : MonoBehaviour {
 	void Start () {
 		flashingText = GetComponent<Text> ();
 		StartCoroutine (BlinkText());
+	}
+
+	void Update() {
+		if (Input.GetMouseButtonDown(0)) {
+			SceneManager.LoadScene ("Help");
+		}
 	}
 
 	public IEnumerator BlinkText(){
